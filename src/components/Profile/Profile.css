@@ -1,6 +1,6 @@
 .profile {
   width: 100%;
-  padding: 150px var(--side-padding);
+  padding: 10vw var(--side-padding);
   opacity: 0;
   transform: translateY(60px);
   transition:
@@ -17,8 +17,8 @@
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 150px;
+  grid-template-columns: 20vw 1fr;
+  gap: 10vw;
   align-items: center;
 }
 
@@ -28,17 +28,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 21px;
+  gap: 1.5vw;
 }
 
 .profile__name-kr {
-  font-size: 42px;
+  font-size: 2.9vw;
   font-weight: 300;
   color: var(--color-text);
 }
 
 .profile__name-en {
-  font-size: 20px;
+  font-size: 1.4vw;
   font-weight: 300;
   color: var(--color-text);
 }
@@ -55,42 +55,45 @@
   object-fit: cover;
   object-position: center top;
 }
+
 /* Right */
 .profile__right {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 4vw;
 }
 
 .profile__quote {
-  font-size: 23px;
+  font-size: 1.6vw;
   font-weight: 300;
   color: var(--color-text);
   line-height: 1.6;
 }
+
 .profile__quote strong {
   color: var(--color-blue);
   font-weight: 600;
 }
+
 .profile__section-title {
-  font-size: 21px;
+  font-size: 1.46vw;
   font-weight: 600;
   color: var(--color-blue);
-  margin-bottom: 20px;
+  margin-bottom: 1.4vw;
 }
 
 /* Career */
 .profile__career {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.7vw;
 }
 
 .profile__career-item {
   display: grid;
-  grid-template-columns: 200px 1fr 1fr;
+  grid-template-columns: 13.9vw 1fr 1fr;
   gap: 8px;
-  font-size: 15px;
+  font-size: 1.04vw;
   color: var(--color-text);
   align-items: center;
   font-weight: 300;
@@ -113,7 +116,7 @@
 .profile__skills {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.8vw;
 }
 
 /* SkillBar */
@@ -127,29 +130,29 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  min-width: 130px;
+  min-width: 9vw;
 }
 
 .skill-bar__icon {
-  width: 28px;
-  height: 28px;
+  width: 1.94vw;
+  height: 1.94vw;
   object-fit: contain;
 }
 
 .skill-bar__name {
-  font-size: 16px;
+  font-size: 1.1vw;
   font-weight: 400;
   color: var(--color-text);
 }
 
 .skill-bar__dots {
   display: flex;
-  gap: 8px;
+  gap: 0.55vw;
 }
 
 .skill-bar__dot {
-  width: 12px;
-  height: 12px;
+  width: 0.83vw;
+  height: 0.83vw;
   border-radius: 50%;
   background-color: #e6eafc;
   opacity: 0;
@@ -178,4 +181,158 @@
 
 .skill-bar__dot--filled {
   background-color: var(--color-blue);
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .profile__inner {
+    grid-template-columns: 1fr;
+    gap: 6vw;
+  }
+
+  .profile__left {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 4vw;
+  }
+
+  .profile__photo {
+    width: 28vw;
+    flex-shrink: 0;
+  }
+
+  .profile__name-kr {
+    font-size: 4.5vw;
+  }
+
+  .profile__name-en {
+    font-size: 2.2vw;
+  }
+
+  .profile__quote {
+    font-size: 2.2vw;
+  }
+
+  .profile__section-title {
+    font-size: 2.2vw;
+    margin-bottom: 1.8vw;
+  }
+
+  .profile__career-item {
+    grid-template-columns: 22vw 1fr 1fr;
+    font-size: 1.6vw;
+  }
+
+  .profile__career {
+    gap: 1vw;
+  }
+
+  .skill-bar__label {
+    min-width: 14vw;
+  }
+
+  .skill-bar__icon {
+    width: 2.8vw;
+    height: 2.8vw;
+  }
+
+  .skill-bar__name {
+    font-size: 1.7vw;
+  }
+
+  .skill-bar__dot {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+
+  .skill-bar__dots {
+    gap: 0.8vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .profile {
+    padding: 12vw var(--side-padding);
+  }
+
+  .profile__inner {
+    grid-template-columns: 1fr;
+    gap: 8vw;
+  }
+
+  .profile__left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4vw;
+  }
+
+  .profile__photo {
+    width: 55vw;
+  }
+
+  .profile__name-kr {
+    font-size: 8vw;
+  }
+
+  .profile__name-en {
+    font-size: 4vw;
+  }
+
+  .profile__right {
+    gap: 8vw;
+  }
+
+  .profile__quote {
+    font-size: 4vw;
+  }
+
+  .profile__section-title {
+    font-size: 4.5vw;
+    margin-bottom: 3vw;
+  }
+
+  .profile__career-item {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    font-size: 3.2vw;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 2vw;
+  }
+
+  .profile__career-company {
+    text-align: left;
+  }
+
+  .profile__career {
+    gap: 2.5vw;
+  }
+
+  .skill-bar__label {
+    min-width: 28vw;
+  }
+
+  .skill-bar__icon {
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+
+  .skill-bar__name {
+    font-size: 3.5vw;
+  }
+
+  .skill-bar__dot {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  .skill-bar__dots {
+    gap: 1.5vw;
+  }
+
+  .profile__skills {
+    gap: 2.5vw;
+  }
 }

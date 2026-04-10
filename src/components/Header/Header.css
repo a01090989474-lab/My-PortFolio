@@ -4,10 +4,10 @@
   left: 0;
   right: 0;
   z-index: 100;
-  font-size: 16px;
+  font-size: 1.1vw;
   font-weight: 500;
   color: var(--color-blue);
-  padding: 10px var(--side-padding);
+  padding: 0.7vw var(--side-padding);
   background-color: var(--color-bg);
 }
 
@@ -17,4 +17,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .header {
+    font-size: 1.8vw;
+    padding: 1.2vw var(--side-padding);
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .header {
+    font-size: 3.5vw;
+    padding: 2.5vw var(--side-padding);
+  }
 }

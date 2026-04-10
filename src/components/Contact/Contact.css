@@ -1,6 +1,6 @@
 .contact {
   width: 100%;
-  padding-top: 150px;
+  padding-top: 10vw;
   overflow: hidden;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .contact__title {
-  font-size: 185px;
+  font-size: 12.8vw;
   font-weight: 600;
   color: var(--color-blue);
   letter-spacing: -0.025em;
@@ -18,4 +18,26 @@
   line-height: 1;
   display: block;
   margin-bottom: -0.22em;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .contact {
+    padding-top: 8vw;
+  }
+
+  .contact__title {
+    font-size: 13vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .contact {
+    padding-top: 12vw;
+  }
+
+  .contact__title {
+    font-size: 14vw;
+  }
 }
