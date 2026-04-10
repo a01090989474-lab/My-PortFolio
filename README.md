@@ -1,16 +1,29 @@
-# React + Vite
+# Sebin Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite로 제작한 개인 포트폴리오 웹사이트입니다.
 
-Currently, two official plugins are available:
+## 소개
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+디자이너 세빈의 포트폴리오 사이트로, 프로필, 스킬, 프로젝트 작업물, 제작 프로세스, 연락처 등을 담고 있습니다.
 
-## React Compiler
+## 주요 섹션
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero** — 첫 인상을 전달하는 메인 비주얼
+- **Profile** — 소개 및 스킬 바
+- **Works** — 프로젝트 작업물 소개
+- **Process** — 작업 프로세스 설명
+- **Strengths** — 강점 카드
+- **Contact** — 연락처 정보
 
-## Expanding the ESLint configuration
+## 기술 스택
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- CSS Modules
+
+## 실행 방법
+
+```bash
+npm install
+npm run dev
+```
