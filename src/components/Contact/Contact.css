@@ -1,0 +1,21 @@
+.contact {
+  width: 100%;
+  padding-top: 150px;
+  overflow: hidden;
+}
+
+.contact__inner {
+  width: 100%;
+}
+
+.contact__title {
+  font-size: 185px;
+  font-weight: 600;
+  color: var(--color-blue);
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+  width: 100%;
+  line-height: 1;
+  display: block;
+  margin-bottom: -0.22em;
+}

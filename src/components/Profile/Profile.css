@@ -1,0 +1,181 @@
+.profile {
+  width: 100%;
+  padding: 150px var(--side-padding);
+  opacity: 0;
+  transform: translateY(60px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.profile--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.profile__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 150px;
+  align-items: center;
+}
+
+/* Left */
+.profile__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 21px;
+}
+
+.profile__name-kr {
+  font-size: 42px;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+.profile__name-en {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+.profile__photo {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 21px;
+}
+
+.profile__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+/* Right */
+.profile__right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.profile__quote {
+  font-size: 23px;
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+.profile__quote strong {
+  color: var(--color-blue);
+  font-weight: 600;
+}
+.profile__section-title {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--color-blue);
+  margin-bottom: 20px;
+}
+
+/* Career */
+.profile__career {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile__career-item {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  gap: 8px;
+  font-size: 15px;
+  color: var(--color-text);
+  align-items: center;
+  font-weight: 300;
+}
+
+.profile__career-period {
+  color: #888888;
+}
+
+.profile__career-role {
+  font-weight: 500;
+}
+
+.profile__career-company {
+  color: #888888;
+  text-align: right;
+}
+
+/* Skills */
+.profile__skills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* SkillBar */
+.skill-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-bar__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 130px;
+}
+
+.skill-bar__icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.skill-bar__name {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.skill-bar__dots {
+  display: flex;
+  gap: 8px;
+}
+
+.skill-bar__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e6eafc;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.profile--visible .skill-bar__dot {
+  animation: dotBounce 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: calc(0.7s + var(--dot-delay, 0s));
+}
+
+@keyframes dotBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.skill-bar__dot--filled {
+  background-color: var(--color-blue);
+}
