@@ -18,7 +18,7 @@
   position: absolute;
   opacity: 0.2;
   object-fit: contain;
-  width: 27.8vw;
+  width: clamp(150px, 27.8vw, 400px);
   animation: bgFloat 6s ease-in-out infinite;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .process__desc {
-  font-size: 1.46vw;
+  font-size: clamp(16px, 1.46vw, 21px);
   font-weight: 300;
 }
 

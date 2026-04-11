@@ -11,7 +11,7 @@
   --color-white: #ffffff;
   --font: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
   --max-width: 1440px;
-  --side-padding: 10vw;
+  --side-padding: clamp(60px, 10vw, 150px);
 }
 
 @media (max-width: 1023px) {

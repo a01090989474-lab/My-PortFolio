@@ -4,10 +4,10 @@
   left: 0;
   right: 0;
   z-index: 100;
-  font-size: 1.1vw;
+  font-size: clamp(14px, 1.1vw, 16px);
   font-weight: 500;
   color: var(--color-blue);
-  padding: 0.7vw var(--side-padding);
+  padding: clamp(6px, 0.7vw, 10px) var(--side-padding);
   background-color: var(--color-bg);
 }
 

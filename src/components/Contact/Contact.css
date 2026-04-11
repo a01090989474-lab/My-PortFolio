@@ -1,6 +1,6 @@
 .contact {
   width: 100%;
-  padding-top: 10vw;
+  padding-top: clamp(60px, 10vw, 150px);
   overflow: hidden;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .contact__title {
-  font-size: 12.8vw;
+  font-size: clamp(90px, 12.8vw, 185px);
   font-weight: 600;
   color: var(--color-blue);
   letter-spacing: -0.025em;

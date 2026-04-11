@@ -1,6 +1,6 @@
 .profile {
   width: 100%;
-  padding: 10vw var(--side-padding);
+  padding: clamp(60px, 10vw, 150px) var(--side-padding);
   opacity: 0;
   transform: translateY(60px);
   transition:
@@ -17,8 +17,8 @@
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 20vw 1fr;
-  gap: 10vw;
+  grid-template-columns: clamp(160px, 20vw, 300px) 1fr;
+  gap: clamp(60px, 10vw, 150px);
   align-items: center;
 }
 
@@ -28,17 +28,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1.5vw;
+  gap: clamp(12px, 1.5vw, 21px);
 }
 
 .profile__name-kr {
-  font-size: 2.9vw;
+  font-size: clamp(28px, 2.9vw, 42px);
   font-weight: 300;
   color: var(--color-text);
 }
 
 .profile__name-en {
-  font-size: 1.4vw;
+  font-size: clamp(14px, 1.4vw, 20px);
   font-weight: 300;
   color: var(--color-text);
 }
@@ -60,11 +60,11 @@
 .profile__right {
   display: flex;
   flex-direction: column;
-  gap: 4vw;
+  gap: clamp(30px, 4vw, 60px);
 }
 
 .profile__quote {
-  font-size: 1.6vw;
+  font-size: clamp(16px, 1.6vw, 23px);
   font-weight: 300;
   color: var(--color-text);
   line-height: 1.6;
@@ -76,24 +76,24 @@
 }
 
 .profile__section-title {
-  font-size: 1.46vw;
+  font-size: clamp(15px, 1.46vw, 21px);
   font-weight: 600;
   color: var(--color-blue);
-  margin-bottom: 1.4vw;
+  margin-bottom: clamp(12px, 1.4vw, 20px);
 }
 
 /* Career */
 .profile__career {
   display: flex;
   flex-direction: column;
-  gap: 0.7vw;
+  gap: clamp(6px, 0.7vw, 10px);
 }
 
 .profile__career-item {
   display: grid;
-  grid-template-columns: 13.9vw 1fr 1fr;
+  grid-template-columns: clamp(100px, 13.9vw, 200px) 1fr 1fr;
   gap: 8px;
-  font-size: 1.04vw;
+  font-size: clamp(12px, 1.04vw, 15px);
   color: var(--color-text);
   align-items: center;
   font-weight: 300;
@@ -116,7 +116,7 @@
 .profile__skills {
   display: flex;
   flex-direction: column;
-  gap: 0.8vw;
+  gap: clamp(8px, 0.8vw, 12px);
 }
 
 /* SkillBar */
@@ -130,29 +130,29 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  min-width: 9vw;
+  min-width: clamp(70px, 9vw, 130px);
 }
 
 .skill-bar__icon {
-  width: 1.94vw;
-  height: 1.94vw;
+  width: clamp(18px, 1.94vw, 28px);
+  height: clamp(18px, 1.94vw, 28px);
   object-fit: contain;
 }
 
 .skill-bar__name {
-  font-size: 1.1vw;
+  font-size: clamp(13px, 1.1vw, 16px);
   font-weight: 400;
   color: var(--color-text);
 }
 
 .skill-bar__dots {
   display: flex;
-  gap: 0.55vw;
+  gap: clamp(4px, 0.55vw, 8px);
 }
 
 .skill-bar__dot {
-  width: 0.83vw;
-  height: 0.83vw;
+  width: clamp(8px, 0.83vw, 12px);
+  height: clamp(8px, 0.83vw, 12px);
   border-radius: 50%;
   background-color: #e6eafc;
   opacity: 0;
